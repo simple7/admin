@@ -1,0 +1,61 @@
+html,body{
+  margin: 0;
+  height: 100%;
+}
+body{
+  font-family: Arial, sans-serif;;
+  font-size: 14px;
+  color: #495060;
+  background-color: #fff;
+}
+.clearfix:after{
+  content: " ";
+  display: block !important;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+/*
+ * @zuthor zhouwei
+ * 修改默认样式
+*/
+.content-menu{
+  .layout-hide-text{
+    .ivu-menu-submenu-title-icon{
+      display: none !important;
+    }
+    .ivu-dropdown-item a{
+      color: #495060;
+    }
+  }
+  .ivu-menu-submenu-title{
+    .ivu-icon-ios-arrow-down{
+      font-weight: 700;
+    }
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 970px){
+  .header-left{
+    .layout-text {
+      display: none;
+    }
+  }
+  .header-content .header-toggle{
+    display: none;
+  }
+}
+
+.layout-breadcrumb ul li{
+  display: inline;
+  &:last-child{
+    font-weight: 700;
+  }
+  a{
+    color: #495060;
+    transition: color .2s ease-in-out;
+  }
+}
+
